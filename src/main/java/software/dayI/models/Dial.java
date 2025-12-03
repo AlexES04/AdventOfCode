@@ -1,4 +1,4 @@
-package software.dayOne;
+package software.dayI.models;
 import java.util.Arrays;
 import java.util.List;
 

@@ -1,12 +1,15 @@
-package software.dayOne;
+package software.dayI.io;
 import java.io.File;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
+
+import software.dayI.models.Order;
+
 import java.util.ArrayList;
 
-public class TxtOrderLoader {
+public class TxtOrderLoader implements OrderLoader {
     private final File file;
     private final OrderDeserializer deserializer;
 
@@ -15,6 +18,7 @@ public class TxtOrderLoader {
         this.deserializer = deserializer;
     }
 
+    @Override
     public List<Order> load() throws IOException {
         List<Order> orders = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {

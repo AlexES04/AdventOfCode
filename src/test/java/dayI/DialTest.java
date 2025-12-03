@@ -1,8 +1,9 @@
+package dayI;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
-import software.dayOne.Dial;
+import software.dayI.models.Dial;
 
 public class DialTest {
     

@@ -1,4 +1,6 @@
-package software.dayOne;
+package software.dayI.io;
+
+import software.dayI.models.Order;
 
 public class TxtOrderDeserializer implements OrderDeserializer {
     @Override
